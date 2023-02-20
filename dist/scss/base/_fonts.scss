@@ -1,0 +1,61 @@
+/**
+ * FONTS
+ *
+ * -------------------------------------------------------------------
+*/
+
+//NeurialGroteskBold
+@font-face{
+    font-family: 'NeurialGroteskBold';
+      src: url('../fonts/NeurialGroteskBold/NeurialGroteskBold.eot');
+      src: url('../fonts/NeurialGroteskBold/NeurialGroteskBold.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/NeurialGroteskBold/NeurialGroteskBold.woff2') format('woff2'),
+           url('../fonts/NeurialGroteskBold/NeurialGroteskBold.woff') format('woff'),
+           url('../fonts/NeurialGroteskBold/NeurialGroteskBold.ttf') format('truetype'),
+           url('../fonts/NeurialGroteskBold/NeurialGroteskBold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+//NeurialGroteskLight
+@font-face{
+    font-family: 'NeurialGroteskLight';
+      src: url('../fonts/NeurialGroteskLight/NeurialGroteskLight.eot');
+      src: url('../fonts/NeurialGroteskLight/NeurialGroteskLight.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/NeurialGroteskLight/NeurialGroteskLight.woff2') format('woff2'),
+           url('../fonts/NeurialGroteskLight/NeurialGroteskLight.woff') format('woff'),
+           url('../fonts/NeurialGroteskLight/NeurialGroteskLight.ttf') format('truetype'),
+           url('../fonts/NeurialGroteskLight/NeurialGroteskLight.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+//NeurialGroteskMedium
+@font-face{
+    font-family: 'NeurialGroteskMedium';
+      src: url('../fonts/NeurialGroteskMedium/NeurialGroteskMedium.eot');
+      src: url('../fonts/NeurialGroteskMedium/NeurialGroteskMedium.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/NeurialGroteskMedium/NeurialGroteskMedium.woff2') format('woff2'),
+           url('../fonts/NeurialGroteskMedium/NeurialGroteskMedium.woff') format('woff'),
+           url('../fonts/NeurialGroteskMedium/NeurialGroteskMedium.ttf') format('truetype'),
+           url('../fonts/NeurialGroteskMedium/NeurialGroteskMedium.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+//NeurialGroteskRegular
+@font-face{
+    font-family: 'NeurialGroteskRegular';
+      src: url('../fonts/NeurialGroteskRegular/font.eot');
+      src: url('../fonts/NeurialGroteskRegular/font.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/NeurialGroteskRegular/NeurialGroteskRegular.woff2') format('woff2'),
+           url('../fonts/NeurialGroteskRegular/NeurialGroteskRegular.woff') format('woff'),
+           url('../fonts/NeurialGroteskRegular/NeurialGroteskRegular.ttf') format('truetype'),
+           url('../fonts/NeurialGroteskRegular/NeurialGroteskRegular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

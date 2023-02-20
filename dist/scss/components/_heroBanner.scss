@@ -1,0 +1,73 @@
+/**
+ * HERO BANNER
+ *
+ * -------------------------------------------------------------------
+*/
+.heroBanner{
+    .container-fluid{
+        position: relative;
+        .heroBanner__image{
+            width: 100%;
+            height: 25vw;
+            position: relative;
+            @media (max-width: $desktop_1024){
+                height: 40vw;
+            }
+            @media (max-width: $tablet){
+                height: 50vw;
+            }
+            @media (max-width: $mobile){
+                height: 85vw;
+            }
+            &:before{
+                content: "";
+                top: -3px;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-image: url("../../dist/img/layers/swoosh-white.png");
+                background-repeat: no-repeat;
+                background-position: top;
+                background-size: contain;
+            }
+            &:after{
+                @media (max-width: $mobile){
+                    content: "";
+                    left: 0;
+                    right: 0;
+                    bottom: -1px;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    background-image: linear-gradient(to top, #fff 5%, rgba(255, 255, 255, 0) 40%);
+                }
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .heroBanner__text{
+            top: 0;
+            bottom: 0;
+            width: 35%;
+            height: auto;
+            z-index: 1;
+            position: absolute;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            @media (max-width: $mobile){
+                width: 70%;
+                margin-top: -25%;
+                position: relative;
+            }
+            p{
+                padding-top: 15px;
+            }
+        }
+    }
+}

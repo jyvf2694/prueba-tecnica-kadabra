@@ -1,0 +1,163 @@
+
+/**
+ * ELEMENTS SCSS
+ *
+ * -------------------------------------------------------------------
+*/
+
+a{
+    display: block;
+    color: $c-white;
+    font-size: 1rem;
+    line-height: normal;
+    text-decoration: none;
+    font-family: $NeurialGroteskLight;
+    &.link--hover:hover{
+        text-decoration: underline;
+    }
+    &.link--active:active{
+        outline-width: 2px;
+        outline-style: dashed;
+        outline-color: $c-white;
+    }
+}
+p, li{
+    margin: 0;
+    padding: 0;
+    color: $c-black2;
+    font-size: 1rem;
+    line-height: normal;
+    font-family: $NeurialGroteskRegular;
+}
+b, strong{
+    font-family: $NeurialGroteskBold;
+}
+label, span{
+    display: block;
+    color: $c-white;
+    font-size: 1rem;
+    line-height: normal;
+    font-family: $NeurialGroteskMedium;
+}
+button{
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+input, textarea{
+    color: $c-black2;
+    font-size: 1rem;
+    line-height: normal;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    background-color: $c-white;
+    font-family: $NeurialGroteskRegular;
+}
+
+//h's
+h1, h2, h3{
+    color: $c-black2;
+    line-height: normal;
+    font-family: $NeurialGroteskMedium;
+}
+h1{
+    font-size: 3.75rem;
+    @media (max-width: $tablet){
+        font-size: 3.25rem;
+    }
+    @media (max-width: $mobile){
+        font-size: 2.75rem;
+    }
+}
+h2{
+    font-size: 3.125rem;
+    @media (max-width: $tablet){
+        font-size: 2.75rem;
+    }
+    @media (max-width: $mobile){
+        font-size: 2.375rem;
+    }
+}
+h3{
+    font-size: 3.125rem;
+    @media (max-width: $tablet){
+        font-size: 2.75rem;
+    }
+    @media (max-width: $mobile){
+        font-size: 2.375rem;
+    }
+}
+
+//header
+.header{
+    width: 55%;
+    z-index: 1;
+    margin: 0 auto;
+    padding-bottom: 70px;
+    position: relative;
+    text-align: center;
+    @media (max-width: $desktop_1024){
+        width: 65%;
+    }
+    @media (max-width: $mobile){
+        width: 100%;
+    }  
+}
+
+//arrow
+.arrowLight--up,
+.arrowLight--left,
+.arrowLight--right,
+.arrowLight--down{
+    cursor: pointer;
+    position: relative;
+    &:active{
+        outline-width: 2px;
+        outline-style: dashed;
+        outline-color: $c-black2;
+    }
+    &:after{
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 8px;
+        height: 8px;
+        margin: auto;
+        position: absolute;
+        border-top: none;
+        border-left: none;
+        border-right: 1.5px $c-black2 solid;
+        border-bottom: 1.5px $c-black2 solid;
+    }
+}
+//arrowLight--down
+.arrowLight--down{
+    &:after{
+        transform: rotate(45deg);
+    }
+}
+//arrowLight--down
+.arrowLight--left{
+    &:after{
+        transform: rotate(135deg);
+    }
+}
+//arrowLight--right
+.arrowLight--right{
+    &:after{
+        transform: rotate(-45deg);
+    }
+}

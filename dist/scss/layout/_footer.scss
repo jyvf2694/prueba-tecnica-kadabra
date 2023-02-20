@@ -1,0 +1,233 @@
+/**
+ * FOOTER
+ *
+ * -------------------------------------------------------------------
+*/
+.siteFooter{
+    .container-fluid{
+        .siteFooter__light{
+            padding: 30px 0;
+            background-image: linear-gradient(90deg, #448000 0, #004a1e 100%);
+            @media (max-width: $mobile){
+                padding: 30px 0 60px 0;
+            }
+            ul{
+                li{
+                    a{
+                        padding: 5px 0;
+                    }
+                }
+            }
+            .copy{
+                margin-top: 30px;
+            }
+            .search-form{
+                .autocomplete-input{
+                    width: 300px !important;
+                    height: 40px !important;
+                    padding: 5px 10px;
+                    margin-top: 10px;
+                    border-radius: 3px !important;
+                    font-family: $NeurialGroteskMedium;
+                }
+                .proposal-box{
+                    width: 300px !important;
+                    .proposal-list{
+                        z-index: 999;
+                        border-radius: 2px;
+                        position: relative;
+                        background-color: $c-white;
+                        li{
+                            padding: 7.5px 10px;
+                            border-bottom: 1px solid $c-gray2;
+                            font-family: $NeurialGroteskMedium;
+                            &:last-child{
+                                border-bottom: none;
+                            }
+                        }
+                    }
+                }
+                .autocomplete-button{
+                    display: none;
+                }
+            }
+        }
+        .siteFooter__dark{
+            padding: 30px 0;
+            background-color: $c-green1;
+            .siteFooter__top{
+                .siteFooter__list{
+                    padding-bottom: 30px;
+                    span{
+                        font-size: 1.25rem;
+                        padding-bottom: 10px;
+                        @media (max-width: $mobile){
+                            font-size: 1rem;
+                        }
+                    }
+                    ul{
+                        &.download{
+                            width: 100%;
+                            display: flex;
+                            @media (max-width: $mobile){
+                                width: 80%;
+                            }
+                            li{
+                                &:first-child{
+                                    margin-right: 45px;
+                                    @media (max-width: $mobile){
+                                        margin-right: 25px;
+                                    }
+                                }
+                                a{
+                                    img{
+                                        transition: all .3s;
+                                    }
+                                    &:hover{
+                                        img{
+                                            transform: scale(1.1);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        li{
+                            a{
+                                padding: 5px 0;
+                                @media (max-width: $mobile){
+                                    font-size: .875rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .siteFooter__center{
+                padding: 30px 0;
+                position: relative;
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &:after{
+                    content: '';
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 1px;
+                    margin: 0 auto;
+                    position: absolute;
+                    background-color: $c-white;
+                    @media (max-width: $mobile){
+                        width: 90%;
+                    }
+                }
+                .siteFooter__logo{
+                    svg{
+                        @media (max-width: $mobile){
+                            max-width: 220px;
+                        }
+                    }
+                }
+                .siteFooter__social{
+                    @media (max-width: $mobile){
+                        padding-top: 15px;
+                    }
+                    ul{
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: flex-end;
+                        @media (max-width: $mobile){
+                            justify-content: flex-start;
+                        }
+                        li{
+                            margin: 5px 30px 5px 0;
+                            @media (max-width: $mobile){
+                                margin-right: 15px;
+                            }
+                            &:last-child{
+                                margin-right: 0;
+                            }
+                            a{
+                                &:hover{
+                                    img{
+                                        opacity: 1;
+                                    }
+                                }
+                                &:active{
+                                    img{
+                                        outline-width: 2px;
+                                        outline-style: dashed;
+                                        outline-color: $c-white;
+                                    }
+                                }
+                                img{
+                                    opacity: .5;
+                                    padding: 3px;
+                                    border-radius: 50%;
+                                    transition: all .3s;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .siteFooter__bottom{
+                .siteFooter__copy{
+                    padding: 25px 0;
+                    span{
+                        padding-bottom: 15px;
+                    }
+                    p{
+                        color: $c-white;
+                        font-size: .75rem;
+                        font-family: $NeurialGroteskLight;
+                    }
+                }
+                .siteFooter__menu{
+                    nav{
+                        ul{
+                            display: flex;
+                            flex-wrap: wrap;
+                            li{
+                                padding: 0 10px;
+                                margin: 5px 0;
+                                position: relative;
+                                line-height: 0;
+                                border-right: 1px solid $c-white;
+                                &:first-child{
+                                    padding-left: 0;
+                                }
+                                &:last-child{
+                                    padding-right: 0;
+                                    border-right: none;
+                                }
+                                a{
+                                    font-size: .75rem;
+                                }
+                                span{
+                                    font-size: .75rem;
+                                    font-family: $NeurialGroteskLight;
+                                }
+                            }
+                        }
+                    }
+                }
+                .siteFooter__icon{
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: flex-end;
+                    @media (max-width: $mobile){
+                        padding-top: 25px;
+                        justify-content: flex-start;
+                    }
+                    img{
+                        width: 40px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}

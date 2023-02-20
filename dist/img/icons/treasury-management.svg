@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>pictograms / treasury management</title>
+    <defs>
+        <filter color-interpolation-filters="auto" id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="pictograms-/-treasury-management" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="icons-/-pictograms-/-treasury-management" filter="url(#filter-1)">
+            <g id="Group-18" transform="translate(3.000000, 3.000000)" stroke="#323232" stroke-width="2">
+                <line x1="26" y1="20" x2="30" y2="20" id="Stroke-1"></line>
+                <line x1="26" y1="26" x2="30" y2="26" id="Stroke-2"></line>
+                <g id="Group-17">
+                    <path d="M6,12 L6,4 C6,1.79 7.79,0 10,0 L34,0 C36.21,0 38,1.79 38,4 L38,30 C38,32.21 36.21,34 34,34 L26,34" id="Stroke-3"></path>
+                    <path d="M6,18 L14,18 C17.314,18 20,20.686 20,24 L20,32 C20,35.314 17.314,38 14,38 L6,38 C2.686,38 0,35.314 0,32 L0,24 C0,20.686 2.686,18 6,18 Z" id="Stroke-5"></path>
+                    <line x1="7.0008" y1="31" x2="13.0008" y2="25" id="Stroke-7"></line>
+                    <path d="M13.5,31.3008 C13.5,31.4108 13.41,31.5008 13.3,31.5008 C13.188,31.4988 13.1,31.4108 13.1,31.2988 C13.1,31.1888 13.19,31.0988 13.3,31.1008 C13.41,31.1008 13.5,31.1888 13.5,31.2988 L13.5,31.3008" id="Stroke-9"></path>
+                    <path d="M6.5,24.6992 C6.5,24.5892 6.59,24.4992 6.7,24.4992 C6.812,24.5012 6.9,24.5892 6.9,24.7012 C6.9,24.8112 6.81,24.9012 6.7,24.8992 C6.59,24.8992 6.5,24.8112 6.5,24.7012 L6.5,24.6992" id="Stroke-11"></path>
+                    <polyline id="Stroke-13" points="30 12 30 8 26 8"></polyline>
+                    <polyline id="Stroke-15" points="16 12.572 18.572 10 24 14 30 8"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

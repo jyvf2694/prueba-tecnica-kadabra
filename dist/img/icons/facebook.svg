@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="43px" height="43px" viewBox="0 0 43 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Facebook</title>
+    <defs>
+        <filter color-interpolation-filters="auto" id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g stroke="none" fill="none">
+        <g filter="url(#filter-1)">
+            <g>
+                <path d="M43.002,21.5 C43.002,9.626 33.376,0 21.501,0 C9.627,0 0,9.626 0,21.5 C0,33.375 9.627,43.001 21.501,43.001 C33.376,43.001 43.002,33.375 43.002,21.5 L43.002,21.5 Z M28.152,24.319 L23.323,24.319 L23.323,36.24 L18.494,36.24 L18.494,24.319 L13.667,24.319 L13.667,19.491 L18.494,19.491 L18.494,16.532 C18.494,12.538 20.822,9.834 24.151,9.834 L28.152,9.834 L28.152,14.588 L24.529,14.588 C24.115,14.588 23.323,14.813 23.323,15.606 L23.323,19.491 L28.152,19.491 L28.152,24.319 Z" fill="#000000"></path>
+            </g>
+        </g>
+    </g>
+</svg>

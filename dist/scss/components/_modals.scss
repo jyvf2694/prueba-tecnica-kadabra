@@ -1,0 +1,33 @@
+/**
+ * MODALS
+ *
+ * -------------------------------------------------------------------
+*/
+#modal-alert-link{
+    .modal-content{
+        padding: 3px;
+        .modal-header{
+            padding: 5px 15px;
+            border-radius: 3px;
+            background-color: $c-gray2;
+            .modal-title{
+                color: $c-black2;
+            }
+            .close{
+                span{
+                    color: $c-black2;
+                    font-size: 1.75rem;
+                    line-height: 0;
+                }
+            }
+        }
+        .modal-footer{
+            .btn-proceed, .btn-cancel{
+                &:active{
+                    border-width: 3px;
+                    border-style: dotted;
+                }
+            }
+        }
+    }
+}

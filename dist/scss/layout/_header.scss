@@ -1,0 +1,256 @@
+/**
+ * HEADER
+ *
+ * -------------------------------------------------------------------
+*/
+.siteHeader{
+    .container-fluid{
+        .siteHeader__dark{
+            padding: 10px 0;
+            background-color: $c-black1;
+            @media (max-width: $tablet){
+                display: none;
+            }
+            .siteHeader__menu{
+                display: flex;
+                justify-content: flex-end;
+                ul{
+                    display: flex;
+                    li{
+                        margin: 0 10px;
+                        line-height: 0;
+                        a{
+                            font-size: .75rem;
+                            font-family: $NeurialGroteskMedium;
+                        }
+                    }
+                }
+            }
+           
+        }
+        .siteHeader__light{
+            padding: 10px 0 70px 0;
+            background-color: $c-white;
+            @media (max-width: $mobile){
+                padding: 10px 0 10px 0;
+                border-bottom: 1px solid $c-gray1;
+            }
+            .row{
+                align-items: center;
+                justify-content: space-between;
+                .menu__hamburger{
+                    display: none;
+                    @media (max-width: $mobile){
+                        top: 20px;
+                        right: 15px;
+                        display: block;
+                        position: absolute;
+                    }
+                    .button--search{
+                        margin-right: 10px;
+                    }
+                }
+                .siteHeader__menu{
+                    nav{
+                        ul{
+                            display: flex;
+                            justify-content: flex-end;
+                            @media (max-width: $mobile){
+                                flex-direction: column;
+                            }
+                            li{
+                                padding: 0 30px;
+
+                                display: flex;
+                                align-items: center;
+                                @media (max-width: $tablet){
+                                    padding: 0 15px;
+                                }
+                                a{
+                                    width: 100%;
+                                    padding: 25px 0;
+                                    color: $c-black2;
+                                    position: relative;
+                                    font-family: $NeurialGroteskMedium;
+                                    @media (max-width: $tablet){
+                                        font-size: .95rem;
+                                    }
+                                    @media (max-width: $mobile){
+                                        padding: 15px 0;
+                                    }
+                                    &:active{
+                                        color: $c-green2;
+                                        outline-color: $c-black2;
+                                        text-decoration: underline;
+                                    }
+                                    &:after{
+                                        content: '';
+                                        left: 0;
+                                        bottom: 0;
+                                        width: 100%;
+                                        height: 1px;
+                                        position: absolute;
+                                        background-color: $c-gray1;
+                                    }
+                                }
+                                .arrowLight--left{
+                                    @media (max-width: $mobile){
+                                        top: 0;
+                                        left: 0;
+                                        bottom: 0;
+                                        position: absolute;
+                                    }
+                                }
+                                .arrowLight--down{
+                                    right: -10px;
+                                    width: 15px;
+                                    height: 100%;
+                                    @media (max-width: $mobile){
+                                        height: 45px;
+                                        right: 15px;
+                                        position: absolute;
+                                    }
+                                }
+                                .dropdown-menu.first{
+                                    top: 130px !important;
+                                    left: 0 !important;
+                                    right: 0 !important;
+                                    width: 100% !important;
+                                    margin: 0 auto !important;
+                                    transform: none !important;
+                                    @media (max-width: $mobile){
+                                        top: 0 !important;
+                                        height: 100%;
+                                        padding: 0;
+                                        border-radius: 0;
+                                    }
+                                    ul{
+                                        display: flex;
+                                        flex-direction: column;
+                                        li{
+                                            &:last-child{
+                                                a:after{
+                                                    display: none;
+                                                }
+                                            }
+                                            a{
+                                                padding: 15px 0;
+                                            }
+                                            .arrowLight--right{
+                                                right: 20px;
+                                                width: 15px;
+                                                height: 45px;
+                                                @media (max-width: $mobile){
+                                                    right: 15px;
+                                                    position: absolute;
+                                                }
+                                            }
+                                            .dropdown__menu--second{
+                                                top: 10px;
+                                                display: none;
+                                                position: absolute;
+                                                @media (max-width: $mobile){
+                                                    top: 0;
+                                                    right: -1000px;
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    z-index: 999;
+                                                    display: block;
+                                                    transition: all .3s;
+                                                    border-top: 1px solid $c-gray1;
+                                                    border-bottom: 1px solid $c-gray1;
+                                                    background-color: $c-white;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .ms-auto{
+                                        margin-left: auto;
+                                        margin-right: 35px;
+                                        @media (max-width: $mobile){
+                                            display: none;
+                                        }
+                                        a{
+                                            width: auto;
+                                            margin-bottom: 15px;
+                                            padding-bottom: 5px;
+                                            &:after{
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+                                &.menu__search{
+                                    padding-right: 0;
+                                    @media (max-width: $mobile){
+                                        display: none;
+                                    }
+                                }
+                                &.menu__login{
+                                    top: 130px;
+                                    width: 300px;
+                                    z-index: 999;
+                                    padding: 0;
+                                    position: absolute;
+
+                                    align-items: flex-end;
+                                    flex-direction: column;
+                                    @media (max-width: $tablet){
+                                        top: 95px;
+                                    }
+                                    @media (max-width: $mobile){
+                                        top: inherit;
+                                        width: 100%;
+                                        display: block;
+                                        padding: 0 15px;
+                                        margin-top: 30px;
+                                        position: relative;
+                                        display: flex;
+                                        align-items: center;
+                                    }
+                                    #collapse__login{
+                                        padding: 15px;
+                                        margin-top: 15px;
+                                        border-radius: 10px;
+                                        border: 1px solid $c-gray1;
+                                        background-color: $c-white;
+                                        label{
+                                            color: $c-black2;
+                                        }
+                                    }
+                                }
+                                &.dropdown__menu--prevF,
+                                &.dropdown__menu--prevS{
+                                    display: none;
+                                    @media (max-width: $mobile){
+                                        display: block;
+                                    }
+                                    a{
+                                        padding-left: 15px !important;
+                                        font-family: $NeurialGroteskBold;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .menu__mobile{
+                    @media (max-width: $mobile){
+                        display: none;
+                        top: 65px;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        z-index: 999;
+                        padding: 0;
+                        padding-bottom: 30px;
+                        position: absolute;
+                        border-top: 1px solid $c-gray1;
+                        border-bottom: 1px solid $c-gray1;
+                        background-color: $c-white;
+                    }
+                }
+            }
+        }
+    }
+}

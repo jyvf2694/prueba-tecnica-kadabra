@@ -1,0 +1,83 @@
+/**
+ * SERVICE CARDS
+ *
+ * -------------------------------------------------------------------
+*/
+.serviceCards{
+    padding: 160px 0;
+    .container{
+        position: relative;
+        .serviceCards__content{
+            width: 80%;
+            z-index: 1;
+            margin: 0 auto;
+            position: relative;
+            .row{
+                justify-content: center;
+                .card{
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    border-radius: 15px;
+                    box-shadow: 0 0 1.875rem rgb(0 0 0 / 15%) !important;
+                    @media (max-width: $mobile){
+                        margin-bottom: 25px;
+                    }
+                    .card-header{
+                        padding-left: 25px;
+                        border-top-left-radius: 15px;
+                        border-top-right-radius: 15px;
+                        &.green{
+                            background-color: $c-green3;
+                        }
+                        &.blue{
+                            background-color: $c-blue;
+                        }
+                        &.orange{
+                            background-color: $c-orange;
+                        }
+                        img{
+                            width: 40px;
+                            height: auto;
+                        }
+                    }
+                    .card-body{
+                        padding: 45px 30px 60px 30px;
+                        border-bottom-left-radius: 15px;
+                        border-bottom-right-radius: 15px;
+                        .card-title{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }  
+        }
+        .serviceCards__layers{
+            .layers__title{
+                top: -70px;
+                left: 0;
+                position: absolute;
+                @media (max-width: $mobile){
+                    left: 15px;
+                }
+                span{
+                    opacity: .03;
+                    font-size: 7.25rem;
+                    font-family: $NeurialGroteskBold;
+                    @media (max-width: $mobile){
+                        font-size: 4.25rem;
+                    }
+                }
+            }
+            .layers__figure{
+                top: -15px;
+                left: -350px;
+                position: absolute;
+                @media (max-width: $mobile){
+                    top: -25px;
+                    left: -420px;
+                }
+            }
+        }
+    }
+}
